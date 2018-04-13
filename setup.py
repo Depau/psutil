@@ -326,7 +326,6 @@ def main():
     )
     if setuptools is not None:
         kwargs.update(
-            python_requires=">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
             test_suite="psutil.tests.get_suite",
             tests_require=[
                 'ipaddress; python_version < "3.3"',
