@@ -324,16 +324,7 @@ def main():
             'Topic :: Utilities',
         ],
     )
-    if setuptools is not None:
-        kwargs.update(
-            test_suite="psutil.tests.get_suite",
-            tests_require=[
-                'ipaddress; python_version < "3.3"',
-                'mock; python_version < "3.3"',
-                'unittest2; python_version < "2.7"',
-            ],
-            zip_safe=False,
-        )
+
     setup(**kwargs)
 
 
