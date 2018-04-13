@@ -332,9 +332,6 @@ def main():
                 'mock; python_version < "3.3"',
                 'unittest2; python_version < "2.7"',
             ],
-            extras_require={
-                'enum': 'enum34; python_version < "3.4"',
-            },
             zip_safe=False,
         )
     setup(**kwargs)
